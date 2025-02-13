@@ -11,11 +11,4 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
-session_start();
-if (!isset($_SESSION['user_id'])) {
-    echo "You are not logged in!";
-    exit();
-}
-echo "Welcome, " . $_SESSION['username'] . "!";
 ?>
