@@ -11,11 +11,11 @@
         <h6>VISTA MEES</h6>
     </header>
     <div class="inhoud">
-        <div class="itema"><img src="image.png"></div>
-        <div class="itemb"><img src="soep.png"></div>
-        <div class="itemc"><img src="snacks.png"></div>
-        <div class="itemd"><img src="gebak.png"></div>
-        <div class="iteme"><img src="broodjes.png"></div>
+        <div class="itema"><img src="../img/image.png"></div>
+        <div class="itemb"><img src="../img/soep.png"></div>
+        <div class="itemc"><img src="../img/snacks.png"></div>
+        <div class="itemd"><img src="../img/gebak.png"></div>
+        <div class="iteme"><img src="../img/broodjes.png"></div>
     </div>
 </body>
 </html>
