@@ -1,0 +1,60 @@
+body {
+    background-color: #d3705a;
+}
+
+header, h6 {
+    font-size: 60px;
+    margin: 0;
+    background-color: #1f4952;
+    border-radius: 10px;
+    color: #FF4B4B;
+    padding: 10px;
+}
+
+.inhoud {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 3 equal columns */
+    gap: 20px; /* Increased spacing */
+    width: 100%;
+    max-width: 10000px; /* Adjusted max width */
+    margin-left: auto;
+    margin-right: auto; /* Center the grid */
+}
+
+.inhoud div {
+    background-color: #cd977e;
+    width: 100%; /* Ensures items fit grid */
+    aspect-ratio: 4 / 3; /* Ensures all items have the same aspect ratio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.inhoud img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the container while keeping aspect ratio */
+}
+
+
+.itema {
+    grid-column: 1;
+}
+
+.itemb {
+    grid-column: 2;
+}
+
+.itemc {
+    grid-column: 3;
+}
+
+.itemd {
+    grid-column: 4;
+}
+
+.iteme {
+    grid-column: 5;
+}
