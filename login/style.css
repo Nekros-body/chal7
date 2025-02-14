@@ -1,0 +1,18 @@
+body {
+
+    background-color: #d3705a;
+}
+
+.shit {
+    display: flex;
+    border: 4px #1f4952 solid;
+    padding: 20px;
+    text-align: center;
+    justify-self: center;
+    border-radius: 15px;
+    margin-top: 40vh;
+    width: 20%;
+    font-size: 150%;
+    flex-direction: column;
+    background-color: #cd977e;
+}
