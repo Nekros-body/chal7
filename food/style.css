@@ -1,3 +1,4 @@
+/* Bestaande CSS */
 body {
     background-color: #d3705a;
 }
@@ -11,21 +12,22 @@ header, h6 {
     padding: 10px;
 }
 
+
 .inhoud {
     margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 3 equal columns */
-    gap: 20px; /* Increased spacing */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
     width: 100%;
-    max-width: 10000px; /* Adjusted max width */
+    max-width: 10000px;
     margin-left: auto;
-    margin-right: auto; /* Center the grid */
+    margin-right: auto;
 }
 
 .inhoud div {
     background-color: #cd977e;
-    width: 100%; /* Ensures items fit grid */
-    aspect-ratio: 4 / 3; /* Ensures all items have the same aspect ratio */
+    width: 100%;
+    aspect-ratio: 4 / 3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,26 +37,5 @@ header, h6 {
 .inhoud img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures images fill the container while keeping aspect ratio */
-}
-
-
-.itema {
-    grid-column: 1;
-}
-
-.itemb {
-    grid-column: 2;
-}
-
-.itemc {
-    grid-column: 3;
-}
-
-.itemd {
-    grid-column: 4;
-}
-
-.iteme {
-    grid-column: 5;
+    object-fit: cover;
 }

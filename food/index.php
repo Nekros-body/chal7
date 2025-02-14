@@ -7,15 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h6>VISTA MEES</h6>
+        <h6>Mees Cathering</h6>
+        <nav>
+<li><a href="#">home</a></li>
+<li><a href="#">Info</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="inhoud">
-        <div class="itema"><img src="../img/image.png"></div>
-        <div class="itemb"><img src="../img/soep.png"></div>
-        <div class="itemc"><img src="../img/snacks.png"></div>
-        <div class="itemd"><img src="../img/gebak.png"></div>
-        <div class="iteme"><img src="../img/broodjes.png"></div>
+    <?php
+        $producten = array('image.png', 'soep.png', "snacks.png", 'gebak.png','broodjes.png' );
+
+        foreach($producten as $key => $value) {
+            print "<div class='item$key'><img src='../img/$value'></div>";
+        }
+?>
     </div>
 </body>
 </html>
