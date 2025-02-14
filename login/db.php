@@ -1,14 +1,13 @@
 <?php
+$host = 'localhost';
+$dbname = 'login_system';
+$username = 'root';
+$password = '';
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "login_system";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Database verbinding mislukt: " . $e->getMessage());
 }
 ?>
