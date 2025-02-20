@@ -5,10 +5,6 @@ if (!isset($_SESSION['user_id'])) {
     exit;
 }
 ?>
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,8 +76,8 @@ if (!isset($_SESSION['user_id'])) {
         </div>
         <nav class="menu" id="menu">
             <a href="#">Home</a>
-            <a href="#">Over</a>
             <a href="#">Diensten</a>
+            <a href="#">Over</a>
             <a href="#">Contact</a>
             <a href="../login/logout.php">logout</a>
         </nav>
@@ -89,7 +85,6 @@ if (!isset($_SESSION['user_id'])) {
         <h6>Mees Cathering</h6>
         <nav>
             <a href="#">home</a>
-            <a href="#">Info</a>
         </nav>
     </header>
     <div class="inhoud">
