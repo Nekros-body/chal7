@@ -12,8 +12,6 @@ session_start();
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-    <div class="kak">
         <div class="shit">
             <img src="../img/logo-vista.png">
             <form method="POST">
@@ -21,7 +19,9 @@ session_start();
                 <p>Wachtwoord:</p><input id="input" type="password" name="password" required><br>
                 <button type="submit">Login</button>
                 <p> nog geen account? klik dan<a href="register.php"> hier</a></p>
-                <?php
+
+            </form>
+            <?php
 
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     $username = $_POST['username'];
@@ -40,10 +40,7 @@ session_start();
                     }
                 }
                 ?>
-            </form>
         </div>
-    </div>
-</main>
 </body>
 </html>
 

@@ -1,17 +1,4 @@
-<?php
-include 'db.php';
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $username = $_POST['username'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-    
-    $stmt = $pdo->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
-    if ($stmt->execute([$username, $password])) {
-        echo "Registratie succesvol. <a href='login.php'>Log in</a>";
-    } else {
-        echo "Er is een fout opgetreden.";
-    }
-}
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,8 +9,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body>
     <main>
-        <div class="kak">
-
             <div class= shit>
             <img src="../img/logo-vista.png">
             <form method="POST">
@@ -32,6 +17,33 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <button type="submit">Registreer</button>
                 <p> al een account? klik <a href="login.php"> hier</a></p>
             </form>
+                                <?php
+                    include 'db.php';
+
+                    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                        $username = $_POST['username'];
+                        $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+                        // Check if the username already exists
+                        $stmt = $pdo->prepare("SELECT COUNT(*) FROM users WHERE username = ?");
+                        $stmt->execute([$username]);
+                        $userExists = $stmt->fetchColumn();
+
+                        if ($userExists) {
+                            echo "Deze gebruikersnaam is al in gebruik.";
+                        } else {
+                            // Insert new user
+                            $stmt = $pdo->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
+                            if ($stmt->execute([$username, $password])) {
+                                header("Location: login.php");
+                                exit();
+                            } else {
+                                echo "Er is een fout opgetreden.";
+                            }
+                        }
+                    }
+                    ?>
+
             </div>
         </div>
     </main>
