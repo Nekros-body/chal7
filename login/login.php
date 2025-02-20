@@ -33,7 +33,7 @@ session_start();
                     
                     if ($user && password_verify($password, $user['password'])) {
                         $_SESSION['user_id'] = $user['id'];
-                        header("Location: dashboard.php");
+                        header("Location: ../food/index.php");
                         exit;
                     } else {
                         echo "Ongeldige inloggegevens.";

@@ -1,3 +1,14 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: ../login/login.php");
+    exit;
+}
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,6 +44,7 @@
             color: white;
             padding-top: 60px;
             transition: 0.4s;
+            background: #FF4B4B;
         }
         .menu a {
             display: block;
@@ -71,6 +83,7 @@
             <a href="#">Over</a>
             <a href="#">Diensten</a>
             <a href="#">Contact</a>
+            <a href="../login/logout.php">logout</a>
         </nav>
     </div>
         <h6>Mees Cathering</h6>
