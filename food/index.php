@@ -50,7 +50,7 @@ if (!isset($_SESSION['user_id'])) {
             font-size: 18px;
         }
         .menu a:hover {
-            background: #d35705a;
+            background: #d35705;
         }
         .menu.active {
             left: 0;
