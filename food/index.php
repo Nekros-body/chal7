@@ -83,7 +83,7 @@ if (!isset($_SESSION['user_id'])) {
         </nav>
     </div>
     <a href="index.php" style="display: inline-block; margin: 0; padding: 0;"> <http://localhost/chal7/food/index.php#></http:>
-    <img src="https://vistaict.gitbook.io/~gitbook/image?url=https%3A%2F%2F939967589-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FSrg7DVCyL5uVwXDLTq92%252Fuploads%252FZC79ikHRPi66QiXt13nf%252Fimage.png%3Falt%3Dmedia%26token%3De9df67e7-a8be-4b9e-86d2-16dec79e9de0&width=400&dpr=3&quality=100&sign=daea5554&sv=2" alt="foto">
+    <img src='../img/meeslogo.png' alt="foto">
     </header>
     <div class="inhoud">
     <?php
