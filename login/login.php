@@ -12,7 +12,9 @@ session_start();
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="particles-js"></div>
         <div class="shit">
+            <img src="../img/mees.png">
             <img src="../img/logo-vista.png">
             <form method="POST">
                 <p>Gebruikersnaam:</p><input id="input"type="text" name="username" required><br>
@@ -41,6 +43,11 @@ session_start();
                 }
                 ?>
         </div>
+    
+
+        
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
 

@@ -4,7 +4,6 @@ body {
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
     height: 100vh; /* Full screen height */
-    background-image: url('../img/Schermafbeelding\ 2025-02-19\ 135104.png');
     background-size: cover; /* Ensures it covers without distortion */
     background-position: center;
     background-repeat: no-repeat;
@@ -28,6 +27,7 @@ body {
  button {
      background-color: #1f4952;
      border: none;
+     min-width: fit-content;
      width: 7vw;
      max-width: 70px;
      height: 5vh;
@@ -42,8 +42,15 @@ body {
      max-width: 150px;
      height: auto;
  }
+    
+
+ #man {
+    opacity: 100%;
+ }
+
  
- .shit {
+ .shit, a {
+     opacity: 80%;
      padding: 2%;
      height: 45vh;
      width: 40vw;
@@ -51,7 +58,9 @@ body {
      min-height: fit-content;
      text-align: center;
      font-size: 1.5rem;
-     background-color: white;
+     background-color: black;
+     border-radius: 5px;
+     color: white;
  }
  
  /* Make it more responsive on smaller screens */
@@ -73,3 +82,4 @@ body {
      }
  }
  
+ #particles-js{ z-index: -1;position:absolute; width: 100%; height: 100%; background-color: white; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } 

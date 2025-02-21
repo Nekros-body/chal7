@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+<div id="particles-js"></div>
+
             <div class= shit>
             <img src="../img/logo-vista.png">
             <form method="POST">
@@ -45,8 +46,9 @@
                     ?>
 
             </div>
-        </div>
-    </main>
+
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
 
