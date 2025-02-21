@@ -37,20 +37,20 @@ if (!isset($_SESSION['user_id'])) {
             width: 250px;
             height: 100vh;
             background: #333;
-            color: white;
+            color: black;
             padding-top: 60px;
             transition: 0.4s;
-            background: #FF4B4B;
+            background: white;
         }
         .menu a {
             display: block;
-            color: white;
+            color: black;
             text-decoration: none;
             padding: 15px;
             font-size: 18px;
         }
         .menu a:hover {
-            background: #d35705;
+            background: #1f4952;
         }
         .menu.active {
             left: 0;
@@ -86,14 +86,12 @@ if (!isset($_SESSION['user_id'])) {
     <img src='../img/meeslogo.png' alt="foto">
     </header>
     <div class="inhoud">
-    <?php
-        $producten = array('image.png', 'soep.png', "snacks.png", 'gebak.png','broodjes.png' );
-
-        foreach($producten as $key => $value) {
-            print "<div class='item$key'><img src='../img/$value'></div>";
-        }
-?>
-
+        <div id="uno"><img src="../img/image.png"></div>
+        <div id="zwei"><img src="../img/soep.png"></div>
+        <div id="tree"><img src="../img/snacks.png"></div>
+        <div id="fier"><img src="../img/gebak.png"></div>
+        <div id="vief"><img src="../img/broodjes.png"></div>
+    </div> 
 <footer>
 <p>&copy; 2025 Mees Catering. Alle rechten voorbehouden.</p>
 </footer>
