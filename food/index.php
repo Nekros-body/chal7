@@ -50,7 +50,7 @@ if (!isset($_SESSION['user_id'])) {
             font-size: 18px;
         }
         .menu a:hover {
-            background: #575757;
+            background: #d35705a;
         }
         .menu.active {
             left: 0;
@@ -82,10 +82,8 @@ if (!isset($_SESSION['user_id'])) {
             <a href="../login/logout.php">logout</a>
         </nav>
     </div>
-        <h6>Mees Cathering</h6>
-        <nav>
-            <a href="#">home</a>
-        </nav>
+    <a href="index.php" style="display: inline-block; margin: 0; padding: 0;"> <http://localhost/chal7/food/index.php#></http:>
+    <img src="https://vistaict.gitbook.io/~gitbook/image?url=https%3A%2F%2F939967589-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FSrg7DVCyL5uVwXDLTq92%252Fuploads%252FZC79ikHRPi66QiXt13nf%252Fimage.png%3Falt%3Dmedia%26token%3De9df67e7-a8be-4b9e-86d2-16dec79e9de0&width=400&dpr=3&quality=100&sign=daea5554&sv=2" alt="foto">
     </header>
     <div class="inhoud">
     <?php
@@ -95,6 +93,11 @@ if (!isset($_SESSION['user_id'])) {
             print "<div class='item$key'><img src='../img/$value'></div>";
         }
 ?>
+
+<footer>
+<p>&copy; 2025 Mees Catering. Alle rechten voorbehouden.</p>
+</footer>
+
     </div>
     <script>
         function toggleMenu() {
