@@ -16,21 +16,34 @@ if (!isset($_SESSION['user_id'])) {
     <style>
         .product-container {
             display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .product {
             margin: 40px;
+            gap: 20px;
+        }
+
+        .shit {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+
+        .product {
+            position: relative;
             border: 1px solid #ccc;
             padding: 10px;
-            max-width: 300px;
             background: #f9f9f9;
             text-align: center;
+            width: 15vw;
+            height: 50vh;
+
         }
+
         .product img {
             max-width: 100%;
             height: auto;
         }
+
         .product h2 {
             font-size: 1.5em;
             margin: 10px 0;
@@ -54,6 +67,7 @@ if (!isset($_SESSION['user_id'])) {
             color: white;
             border: none;
             cursor: pointer;
+
         }
         button:hover {
             background-color: #218838;
@@ -128,35 +142,99 @@ if (!isset($_SESSION['user_id'])) {
             <a href="../login/logout.php">logout</a>
         </nav>
     </div>
-    <a href="index.php" style="display: inline-block; margin: 0; padding: 0;"> <http://localhost/chal7/food/index.php#></http:>
+    <a href="index.php" style="display: inline-block; margin: 0; padding: 0;"> <http://localhost/chal7/food/index.php#></http:></a>
     <img src='../img/meeslogo.png' alt="foto">
-    </header>
+</header>
 
     
 <div class="product-container">
     <div class="product">
-        <img src= '../img/romige.jpg' alt="Championsoep">
-        <h2>Championsoep</h2>
-        <p>Geniet van deze heerlijke championsoep.</p>
-        <p>Prijs: € 2,50</p>
+        <img src= '../img/pepsi.png' alt="pepsi">
+        <div class="shit">
+        <h2>Pepsi</h2>
+        <p>Geniet van deze heerlijke Pepsi Cola.</p>
+        <p>Prijs: € 2,00</p>
         <form action="cart.php" method="POST" class="buy-form">
-            <input type="hidden" name="product" value="Championsoep">
+            <input type="hidden" name="product" value="pepsi">
+            <input type="number" name="quantity" value="1" min="1">
+            <button type="submit">Koop</button>
+        </form>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src= '../img/sprite.png' alt="sprite">
+        <div class="shit">
+        <h2>Sprite</h2>
+        <p>Geniet van deze heerlijke Sprite.</p>
+        <p>Prijs: € 2,00</p>
+        <form action="cart.php" method="POST" class="buy-form">
+            <input type="hidden" name="product" value="sprite">
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
     </div>
+    </div>
 
     <div class="product">
-        <img src= '../img/tomaatsoep.jpg' alt="Tomatensoep">
-        <h2>Tomatensoep</h2>
-        <p>Geniet van deze heerlijke Tomatensoep</p>
-        <p>Prijs: € 2,50</p>
+        <img src= '../img/cocacola.png' alt="Tomatensoep">
+        <div class="shit">
+        <h2>Cola</h2>
+        <p>Geniet van deze heerlijke Coca Cola</p>
+        <p>Prijs: € 2,00</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="Tomatensoep">
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
     </div>
+        
+    </div>
+
+    <div class="product">
+        <img src= '../img/7up.png' alt="Championsoep">
+        <div class="shit">
+        <h2>7up</h2>
+        <p>Geniet van deze heerlijke 7up.</p>
+        <p>Prijs: € 2,00</p>
+        <form action="cart.php" method="POST" class="buy-form">
+            <input type="hidden" name="product" value="Championsoep">
+            <input type="number" name="quantity" value="1" min="1">
+            <button type="submit">Koop</button>
+        </form>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src= '../img/liptonicetea.png' alt="Championsoep">
+        <div class="shit">
+        <h2>Ice Thea</h2>
+        <p>Geniet van deze heerlijke Ice Thea.</p>
+        <p>Prijs: € 2,00</p>
+        <form action="cart.php" method="POST" class="buy-form">
+            <input type="hidden" name="product" value="Championsoep">
+            <input type="number" name="quantity" value="1" min="1">
+            <button type="submit">Koop</button>
+        </form>
+    </div>
+    </div>
+
+
+    <div class="product">
+        <img src= '../img/fanta.png' alt="fanta">
+        <div class="shit">
+        <h2>Fanta</h2>
+        <p>Geniet van deze heerlijke Sprite.</p>
+        <p>Prijs: € 2,00</p>
+        <form action="cart.php" method="POST" class="buy-form">
+            <input type="hidden" name="product" value="fanta">
+            <input type="number" name="quantity" value="1" min="1">
+            <button type="submit">Koop</button>
+        </form>
+        </div>
+    </div>
+
+
 </div>
 
 

@@ -159,7 +159,6 @@ if (!isset($_SESSION['user_id'])) {
     </div>
 </div>
 
-
 <script>
         function toggleMenu() {
             const menu = document.getElementById("menu");
@@ -168,10 +167,6 @@ if (!isset($_SESSION['user_id'])) {
             hamburger.classList.toggle("active");
         }
     </script>
-
-
-
-
 
 <footer>
 <p>&copy; 2025 Mees Catering. Alle rechten voorbehouden.</p>
