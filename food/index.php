@@ -85,13 +85,15 @@ if (!isset($_SESSION['user_id'])) {
     <a href="index.php" style="display: inline-block; margin: 0; padding: 0;"> <http://localhost/chal7/food/index.php#></http:>
     <img src='../img/meeslogo.png' alt="foto">
     </header>
+
     <div class="inhoud">
-        <div id="uno"><img src="../img/image.png"></div>
-        <div id="zwei"><img src="../img/soep.png"></div>
-        <div id="tree"><img src="../img/snacks.png"></div>
-        <div id="fier"><img src="../img/gebak.png"></div>
-        <div id="vief"><img src="../img/broodjes.png"></div>
+        <a href="drinken.php"><div id="uno"><img src="../img/image.png"></div></a>
+        <a href="soep.php"><div id="zwei"><img src="../img/soep.png"></div></a>
+        <a href="soep.php"><div id="tree"><img src="../img/snacks.png"></div></a>
+        <a href="soep.php"><div id="fier"><img src="../img/gebak.png"></div></a>
+        <a href="broodjes.php"><div id="vief"><img src="../img/broodjes.png"></div></a>
     </div> 
+
 <footer>
 <p>&copy; 2025 Mees Catering. Alle rechten voorbehouden.</p>
 </footer>
