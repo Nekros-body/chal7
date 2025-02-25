@@ -101,7 +101,6 @@ if (!isset($_SESSION['user_id'])) {
             padding-top: 60px;
             transition: 0.4s;
             background: white;
-            z-index: 10;
         }
         .menu a {
             display: block;
@@ -136,7 +135,7 @@ if (!isset($_SESSION['user_id'])) {
             <div class="bar"></div>
         </div>
         <nav class="menu" id="menu">
-            <a href="index.php">Home</a>
+            <a href="#">Home</a>
             <a href="#">Diensten</a>
             <a href="#">Over</a>
             <a href="#">Contact</a>
@@ -150,13 +149,13 @@ if (!isset($_SESSION['user_id'])) {
     
 <div class="product-container">
     <div class="product">
-        <img src= '../img/pepsi.png' alt="pepsi">
+        <img src= '../img/mexicano.png' alt="mexicano">
         <div class="shit">
-        <h2>Pepsi</h2>
-        <p>Geniet van deze heerlijke Pepsi Cola.</p>
+        <h2>Mexicano</h2>
+        <p>Geniet van deze heerlijke Mexicano.</p>
         <p>Prijs: € 2,00</p>
         <form action="cart.php" method="POST" class="buy-form">
-            <input type="hidden" name="product" value="pepsi">
+            <input type="hidden" name="product" value="mexicano">
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -164,13 +163,13 @@ if (!isset($_SESSION['user_id'])) {
     </div>
 
     <div class="product">
-        <img src= '../img/sprite.png' alt="sprite">
+        <img src= '../img/frikandel.png' alt="frikandel">
         <div class="shit">
-        <h2>Sprite</h2>
-        <p>Geniet van deze heerlijke Sprite.</p>
+        <h2>Frikandel</h2>
+        <p>Geniet van deze heerlijke Frikandel.</p>
         <p>Prijs: € 2,00</p>
         <form action="cart.php" method="POST" class="buy-form">
-            <input type="hidden" name="product" value="sprite">
+            <input type="hidden" name="product" value="frikandel">
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -178,13 +177,13 @@ if (!isset($_SESSION['user_id'])) {
     </div>
 
     <div class="product">
-        <img src= '../img/cocacola.png' alt="Tomatensoep">
+        <img src= '../img/kaassoufle.png' alt="kaassoufle">
         <div class="shit">
-        <h2>Cola</h2>
-        <p>Geniet van deze heerlijke Coca Cola</p>
+        <h2>Kaassoufle</h2>
+        <p>Geniet van deze heerlijke Kaassoufle.</p>
         <p>Prijs: € 2,00</p>
         <form action="cart.php" method="POST" class="buy-form">
-            <input type="hidden" name="product" value="Tomatensoep">
+            <input type="hidden" name="product" value="kaassoufle">
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -193,47 +192,20 @@ if (!isset($_SESSION['user_id'])) {
     </div>
 
     <div class="product">
-        <img src= '../img/7up.png' alt="Championsoep">
+        <img src= '../img/kroket.png' alt="kroket">
         <div class="shit">
-        <h2>7up</h2>
-        <p>Geniet van deze heerlijke 7up.</p>
+        <h2>Kroket</h2>
+        <p>Geniet van deze heerlijke Kroket.</p>
         <p>Prijs: € 2,00</p>
         <form action="cart.php" method="POST" class="buy-form">
-            <input type="hidden" name="product" value="Championsoep">
+            <input type="hidden" name="product" value="kroket">
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
         </div>
     </div>
 
-    <div class="product">
-        <img src= '../img/liptonicetea.png' alt="Championsoep">
-        <div class="shit">
-        <h2>Ice Tea</h2>
-        <p>Geniet van deze heerlijke Ice Tea.</p>
-        <p>Prijs: € 2,00</p>
-        <form action="cart.php" method="POST" class="buy-form">
-            <input type="hidden" name="product" value="Championsoep">
-            <input type="number" name="quantity" value="1" min="1">
-            <button type="submit">Koop</button>
-        </form>
-    </div>
-    </div>
-
-
-    <div class="product">
-        <img src= '../img/fanta.png' alt="fanta">
-        <div class="shit">
-        <h2>Fanta</h2>
-        <p>Geniet van deze heerlijke Fanta.</p>
-        <p>Prijs: € 2,00</p>
-        <form action="cart.php" method="POST" class="buy-form">
-            <input type="hidden" name="product" value="fanta">
-            <input type="number" name="quantity" value="1" min="1">
-            <button type="submit">Koop</button>
-        </form>
-        </div>
-    </div>
+   
 
 
 </div>
