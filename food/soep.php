@@ -45,6 +45,7 @@ if (!isset($_SESSION['user_id'])) {
     <p>Prijs: € 2,50</p>
 </div>
 
+
 <div class="product">
     <img src= '../img/meeslogo.png' alt="tomaatsoep">
     <h2>Championsoep</h2>
