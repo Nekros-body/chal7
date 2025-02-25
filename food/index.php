@@ -91,7 +91,7 @@ if (!isset($_SESSION['user_id'])) {
         <a href="soep.php"><div id="zwei"><img src="../img/soep.png"></div></a>
         <a href="soep.php"><div id="tree"><img src="../img/snacks.png"></div></a>
         <a href="soep.php"><div id="fier"><img src="../img/gebak.png"></div></a>
-        <a href="soep.php"><div id="vief"><img src="../img/broodjes.png"></div></a>
+        <a href="broodjes.php"><div id="vief"><img src="../img/broodjes.png"></div></a>
     </div> 
 
 <footer>
