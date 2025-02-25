@@ -5,14 +5,60 @@ if (!isset($_SESSION['user_id'])) {
     exit;
 }
 ?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Productpagina</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        .product-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product {
+            margin: 40px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            max-width: 300px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .product p {
+            margin: 5px 0;
+        }
+        .buy-form {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        input[type="number"] {
+            width: 60px;
+            padding: 5px;
+            text-align: center;
+        }
+        button {
+            padding: 8px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+
         .menu-container {
             position: relative;
         }
@@ -67,7 +113,7 @@ if (!isset($_SESSION['user_id'])) {
     </style>
 </head>
 <body>
-    <header>
+<header>
     <div class="menu-container">
         <div class="hamburger" onclick="toggleMenu()">
             <div class="bar"></div>
@@ -86,20 +132,35 @@ if (!isset($_SESSION['user_id'])) {
     <img src='../img/meeslogo.png' alt="foto">
     </header>
 
-    <div class="inhoud">
-        <a href="drinken.php"><div id="uno"><img src="../img/image.png"></div></a>
-        <a href="soep.php"><div id="zwei"><img src="../img/soep.png"></div></a>
-        <a href="soep.php"><div id="tree"><img src="../img/snacks.png"></div></a>
-        <a href="soep.php"><div id="fier"><img src="../img/gebak.png"></div></a>
-        <a href="broodjes.php"><div id="vief"><img src="../img/broodjes.png"></div></a>
-    </div> 
-
-<footer>
-<p>&copy; 2025 Mees Catering. Alle rechten voorbehouden.</p>
-</footer>
-
+    
+<div class="product-container">
+    <div class="product">
+        <img src= '../img/romige.jpg' alt="Championsoep">
+        <h2>Championsoep</h2>
+        <p>Geniet van deze heerlijke championsoep.</p>
+        <p>Prijs: € 2,50</p>
+        <form action="cart.php" method="POST" class="buy-form">
+            <input type="hidden" name="product" value="Championsoep">
+            <input type="number" name="quantity" value="1" min="1">
+            <button type="submit">Koop</button>
+        </form>
     </div>
-    <script>
+
+    <div class="product">
+        <img src= '../img/tomaatsoep.jpg' alt="Tomatensoep">
+        <h2>Tomatensoep</h2>
+        <p>Geniet van deze heerlijke Tomatensoep</p>
+        <p>Prijs: € 2,50</p>
+        <form action="cart.php" method="POST" class="buy-form">
+            <input type="hidden" name="product" value="Tomatensoep">
+            <input type="number" name="quantity" value="1" min="1">
+            <button type="submit">Koop</button>
+        </form>
+    </div>
+</div>
+
+
+<script>
         function toggleMenu() {
             const menu = document.getElementById("menu");
             const hamburger = document.querySelector(".hamburger");
@@ -107,5 +168,10 @@ if (!isset($_SESSION['user_id'])) {
             hamburger.classList.toggle("active");
         }
     </script>
+
+<footer>
+<p>&copy; 2025 Mees Catering. Alle rechten voorbehouden.</p>
+</footer>
+
 </body>
 </html>
