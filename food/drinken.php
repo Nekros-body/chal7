@@ -209,8 +209,8 @@ if (!isset($_SESSION['user_id'])) {
     <div class="product">
         <img src= '../img/liptonicetea.png' alt="Championsoep">
         <div class="shit">
-        <h2>Ice Thea</h2>
-        <p>Geniet van deze heerlijke Ice Thea.</p>
+        <h2>Ice Tea</h2>
+        <p>Geniet van deze heerlijke Ice Tea.</p>
         <p>Prijs: € 2,00</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="Championsoep">
@@ -225,7 +225,7 @@ if (!isset($_SESSION['user_id'])) {
         <img src= '../img/fanta.png' alt="fanta">
         <div class="shit">
         <h2>Fanta</h2>
-        <p>Geniet van deze heerlijke Sprite.</p>
+        <p>Geniet van deze heerlijke Fanta.</p>
         <p>Prijs: € 2,00</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="fanta">
