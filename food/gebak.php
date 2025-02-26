@@ -16,21 +16,34 @@ if (!isset($_SESSION['user_id'])) {
     <style>
         .product-container {
             display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .product {
             margin: 40px;
+            gap: 20px;
+        }
+
+        .shit {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+
+        .product {
+            position: relative;
             border: 1px solid #ccc;
             padding: 10px;
-            max-width: 300px;
             background: #f9f9f9;
             text-align: center;
+            width: 15vw;
+            height: 50vh;
+
         }
+
         .product img {
             max-width: 100%;
             height: auto;
         }
+
         .product h2 {
             font-size: 1.5em;
             margin: 10px 0;
@@ -54,6 +67,7 @@ if (!isset($_SESSION['user_id'])) {
             color: white;
             border: none;
             cursor: pointer;
+
         }
         button:hover {
             background-color: #218838;
@@ -87,6 +101,7 @@ if (!isset($_SESSION['user_id'])) {
             padding-top: 60px;
             transition: 0.4s;
             background: white;
+            z-index: 10;
         }
         .menu a {
             display: block;
@@ -121,21 +136,22 @@ if (!isset($_SESSION['user_id'])) {
             <div class="bar"></div>
         </div>
         <nav class="menu" id="menu">
-            <a href="#">Home</a>
+            <a href="index.php">Home</a>
             <a href="#">Diensten</a>
             <a href="#">Over</a>
             <a href="#">Contact</a>
             <a href="../login/logout.php">logout</a>
         </nav>
     </div>
-    <a href="index.php" style="display: inline-block; margin: 0; padding: 0;"> <http://localhost/chal7/food/index.php#></http:>
+    <a href="index.php" style="display: inline-block; margin: 0; padding: 0;"> <http://localhost/chal7/food/index.php#></http:></a>
     <img src='../img/meeslogo.png' alt="foto">
-    </header>
+</header>
 
-    
+     
 <div class="product-container">
     <div class="product">
         <img src= '../img/muffin.png' alt="Chocolade Muffin">
+        <div class="shit">
         <h2>Chocolade Muffin</h2>
         <p>Geniet van deze heerlijke Chocolade Muffin.</p>
         <p>Prijs: € 2,75</p>
@@ -145,9 +161,11 @@ if (!isset($_SESSION['user_id'])) {
             <button type="submit">Koop</button>
         </form>
     </div>
+    </div>
 
     <div class="product">
         <img src= '../img/wafel.png' alt="Suikerwafel">
+        <div class="shit">
         <h2>Suikerwafel</h2>
         <p>Geniet van deze heerlijke Suikerwafel</p>
         <p>Prijs: € 2,15</p>
@@ -161,8 +179,9 @@ if (!isset($_SESSION['user_id'])) {
 
 <div class="product">
         <img src= '../img/chocopuddingbroodje.png' alt="Chocolade pudding broodje">
-        <h2>Chocolade pudding broodje</h2>
-        <p>Geniet van deze heerlijke Chocolade pudding broodje</p>
+        <div class="shit">
+        <h2>Chocolade Pudding Broodje</h2>
+        <p>Geniet van deze heerlijke Chocolade Pudding Broodje</p>
         <p>Prijs: € 1,45</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="Chocolade pudding broodje">
@@ -171,6 +190,8 @@ if (!isset($_SESSION['user_id'])) {
         </form>
     </div>
 </div>
+
+
 
 <script>
         function toggleMenu() {
