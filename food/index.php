@@ -75,7 +75,7 @@ if (!isset($_SESSION['user_id'])) {
             <div class="bar"></div>
         </div>
         <nav class="menu" id="menu">
-            <a href="#">Home</a>
+            <a href="index.php">Home</a>
             <a href="#">Diensten</a>
             <a href="#">Over</a>
             <a href="#">Contact</a>

@@ -36,6 +36,7 @@ nav a {
 }
 
 .inhoud {
+    justify-content: center;
     margin-top: 30px;
     display: flex;
     gap: 20px;
@@ -44,11 +45,14 @@ nav a {
 }
 
 .inhoud div {
+    background-color: #f9f9f9;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    width: 15vw;
+    height: 50vh;
 }
 
 
