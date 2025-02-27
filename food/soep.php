@@ -190,6 +190,9 @@ if (!isset($_SESSION['user_id'])) {
 
 <footer>
 <p>&copy; 2025 Mees Catering. Alle rechten voorbehouden.</p>
+<a href="view_cart.php"><img id="cart" src='../img/winkelwagen.png' alt="foto"></a>
+
 </footer>
+
 </body>
 </html>
