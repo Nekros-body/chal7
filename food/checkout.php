@@ -188,7 +188,7 @@ echo "<p>Your order has been placed successfully.</p>";
 
 </footer>
 
-
+<script src="script.js"></script>
 </body>
 </html>
 
