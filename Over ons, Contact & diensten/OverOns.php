@@ -37,7 +37,7 @@ if (!isset($_SESSION['user_id'])) {
             position: fixed;
             top: 0;
             left: -260px;
-            width: 400px;
+            width: 250px;
             height: 100vh;
             background: #333;
             color: black;
