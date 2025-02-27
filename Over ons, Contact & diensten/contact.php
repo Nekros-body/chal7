@@ -101,7 +101,7 @@ if (!isset($_SESSION['user_id'])) {
     
     <h2>Contactgegevens:</h2>
     <ul>
-        <li><strong>Adres:</strong>Vista College HeerlenValkenburgerweg 1486419 AW Heerlen</li>
+        <li><strong>Adres:</strong> Vista College Heerlen  Valkenburgerweg 148  6419 AW Heerlen</li>
         <li><strong>Telefoon:</strong> 046 82456245</li>
         <li><strong>E-mail:</strong>Info@meesheerlen.nl</li>
     </ul>
