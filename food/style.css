@@ -65,6 +65,8 @@ nav a {
 
 
 footer {
+    flex-direction: column-reverse;
+    display: flex;
     width: 100%;
     background-color: white; 
     color: black;

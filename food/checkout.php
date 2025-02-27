@@ -157,9 +157,9 @@ $stmt->execute();
         </div>
         <nav class="menu" id="menu">
             <a href="index.php">Home</a>
-            <a href="#">Diensten</a>
-            <a href="#">Over</a>
-            <a href="#">Contact</a>
+            <a href="../Over ons, Contact & diensten/diensten.php">Diensten</a>
+            <a href="../Over ons, Contact & diensten/OverOns.php">Over</a>
+            <a href="../Over ons, Contact & diensten/contact.php">Contact</a>
             <a href="../login/logout.php">logout</a>
         </nav>
     </div>
