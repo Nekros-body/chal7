@@ -94,7 +94,11 @@ if (!isset($_SESSION['user_id'])) {
 <div class="inhoud">
 <h1>Over ons</h1>
     
-    <h2></h2>
+    <h2>Bij Vista College Heerlen staat de student centraal. Onze cateringservice biedt een breed scala aan verse en smakelijke opties om de dagelijkse eetbehoeften van onze studenten te vervullen. Wij geloven dat goed eten bijdraagt aan een betere leerervaring en een gezonde levensstijl.
+Onze broodjes worden dagelijks bereid met de beste ingrediënten en zijn verkrijgbaar in een groot assortiment. Of je nu zin hebt in een klassiek belegde broodje, een gezond alternatief of een snel ontbijt voor onderweg, wij hebben voor ieder wat wils. We streven ernaar om onze producten regelmatig te vernieuwen en aan te passen aan de wensen van onze studenten, inclusief dieetopties zoals glutenvrij en veganistisch.
+Naast onze broodjeservice bieden we ook diverse snacks en dranken om je dag op school compleet te maken. Ons team van enthousiaste medewerkers staat altijd klaar om je te helpen en te adviseren bij je keuze.
+Bij Vista College Heerlen willen we een gezellige en gastvrije omgeving creëren waar studenten kunnen genieten van een goede maaltijd en elkaar kunnen ontmoeten. Kom gerust langs in onze kantine, bestel online of neem een kijkje op ons menu!
+</h2>
     <ul>
         <li><strong>Groot Assortiment:</strong> Kies uit een divers aanbod van verse broodjes, waaronder:
             <ul>
@@ -105,31 +109,7 @@ if (!isset($_SESSION['user_id'])) {
         </li>
     </ul>
     
-    <h2>2. Ontbijtservice</h2>
-    <ul>
-        <li><strong>Ontbijt Broodjes:</strong> Start je dag goed met onze lekkere ontbijtopties, zoals croissants en luxe belegde broodjes.</li>
-    </ul>
     
-    <h2>3. Snacks en Dranken</h2>
-    <ul>
-        <li><strong>Tussendoortjes:</strong> Naast broodjes bieden we een selectie van snacks, zoals fruit, noten en zoetigheden.</li>
-        <li><strong>Dranken:</strong> Kies uit een assortiment van koffie, thee, sappen en frisdranken om je bestelling compleet te maken.</li>
-    </ul>
-    
-    <h2>4. Groepsbestellingen</h2>
-    <ul>
-        <li><strong>Voor Evenementen:</strong> Ideaal voor vergaderingen, evenementen of andere gelegenheden waarbij je met een groep bent. Plaats eenvoudig een grote bestelling en haal deze op.</li>
-    </ul>
-    
-    <h2>5. Openingstijden</h2>
-    <ul>
-        <li><strong>Flexibele Afhaalopties:</strong> Onze service is beschikbaar tijdens de schooluren, zodat je altijd snel een maaltijd kunt ophalen tussen de lessen door.</li>
-    </ul>
-    
-    <h2>6. Bestelinformatie</h2>
-    <ul>
-        <li><strong>Eenvoudig Bestellen:</strong> Plaats je bestelling online of ter plaatse, en haal je favoriete broodjes op het afgesproken tijdstip op.</li>
-    </ul>
 
 </div>
 
