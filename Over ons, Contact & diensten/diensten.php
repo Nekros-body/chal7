@@ -90,20 +90,6 @@ if (!isset($_SESSION['user_id'])) {
     </div>
     <a href="index.php" style="display: inline-block; margin: 0; padding: 0;"> <http://localhost/chal7/food/index.php#></http:></a>
     <img src='../img/meeslogo.png' alt="foto">
-
-  
-<div id="google_translate_element"></div>
-
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'en',
-    includedLanguages: 'nl,en' // remove this line if you want to include all languages
-  },'google_translate_element');
-}
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </header>
 <div class="inhoud">
 <h1>Diensten van Vista College Heerlen Catering</h1>

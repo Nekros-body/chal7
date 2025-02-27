@@ -78,7 +78,7 @@ if (!isset($_SESSION['user_id'])) {
         </div>
         <nav class="menu" id="menu">
             <a href="index.php">Home</a>
-            <a href="#">Diensten</a>
+            <a href="../Over ons, Contact & diensten/diensten.php">Diensten</a>
             <a href="#">Over</a>
             <a href="#">Contact</a>
             <a href="../login/logout.php">logout</a>
@@ -98,6 +98,8 @@ if (!isset($_SESSION['user_id'])) {
 
 <footer>
 <p>&copy; 2025 Mees Catering. Alle rechten voorbehouden.</p>
+<a ><img src='../img/winkelwagen.png' alt="foto"></a>
+
 </footer>
 
     </div>
