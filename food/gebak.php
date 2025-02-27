@@ -158,6 +158,7 @@ if (!isset($_SESSION['user_id'])) {
         <p>Prijs: € 2,75</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="Chocolade Muffin">
+            <input type="hidden" name="price" value="2.50"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -172,6 +173,7 @@ if (!isset($_SESSION['user_id'])) {
         <p>Prijs: € 2,15</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="Suikerwafel">
+            <input type="hidden" name="price" value="2.50"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -186,6 +188,7 @@ if (!isset($_SESSION['user_id'])) {
         <p>Prijs: € 1,45</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="Chocolade pudding broodje">
+            <input type="hidden" name="price" value="2.50"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -209,6 +212,33 @@ if (!isset($_SESSION['user_id'])) {
 
 </footer>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.buy-form').submit(function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
 
+        var form = $(this);
+        var productName = form.find('input[name="product"]').val();
+        var quantity = form.find('input[name="quantity"]').val();
+
+        $.ajax({
+            url: 'cart.php', // The PHP file that handles adding to the cart
+            type: 'POST',
+            data: {
+                product: productName,
+                quantity: quantity
+            },
+            success: function(response) {
+                // Display a success message
+                alert(response); // You can customize this to show a message on the page instead
+            },
+            error: function() {
+                alert('An error occurred while adding the product to the cart.');
+            }
+        });
+    });
+});
+</script>
 </body>
 </html>

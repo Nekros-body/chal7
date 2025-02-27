@@ -30,21 +30,26 @@ session_start();
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     $username = $_POST['username'];
                     $password = $_POST['password'];
-                    
-                    $stmt = $pdo->prepare("SELECT * FROM users WHERE username = ?");
-                    $stmt->execute([$username]);
-                    $user = $stmt->fetch();
-                    
+
+                    // Prepare and execute the SQL statement using mysqli
+                    $stmt = $conn->prepare("SELECT * FROM users WHERE username = ?");
+                    $stmt->bind_param("s", $username); // Bind the username parameter
+                    $stmt->execute();
+                    $result = $stmt->get_result(); // Get the result set from the executed statement
+                    $user = $result->fetch_assoc(); // Fetch the user data as an associative array
+
                     if ($user && password_verify($password, $user['password'])) {
+                        // Successful login
                         $_SESSION['user_id'] = $user['id'];
                         header("Location: ../food/index.php");
                         exit;
                     } else {
+                        // Invalid credentials
                         echo "Ongeldige inloggegevens.";
                     }
                 }
                 ?>
-        </div>
+                        </div>
 
     </main>
 </body>

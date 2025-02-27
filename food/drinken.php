@@ -159,7 +159,8 @@ if (!isset($_SESSION['user_id'])) {
         <p>Geniet van deze heerlijke Pepsi Cola.</p>
         <p>Prijs: € 2,00</p>
         <form action="cart.php" method="POST" class="buy-form">
-            <input type="hidden" name="product" value="pepsi">
+            <input type="hidden" name="product" value="Pepsi">
+            <input type="hidden" name="price" value="2.00"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -173,7 +174,8 @@ if (!isset($_SESSION['user_id'])) {
         <p>Geniet van deze heerlijke Sprite.</p>
         <p>Prijs: € 2,00</p>
         <form action="cart.php" method="POST" class="buy-form">
-            <input type="hidden" name="product" value="sprite">
+            <input type="hidden" name="product" value="Sprite">
+            <input type="hidden" name="price" value="2.50"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -188,6 +190,7 @@ if (!isset($_SESSION['user_id'])) {
         <p>Prijs: € 2,00</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="Tomatensoep">
+            <input type="hidden" name="price" value="2.50"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -203,6 +206,7 @@ if (!isset($_SESSION['user_id'])) {
         <p>Prijs: € 2,00</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="Championsoep">
+            <input type="hidden" name="price" value="2.50"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -217,6 +221,7 @@ if (!isset($_SESSION['user_id'])) {
         <p>Prijs: € 2,00</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="Championsoep">
+            <input type="hidden" name="price" value="2.50"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -232,6 +237,7 @@ if (!isset($_SESSION['user_id'])) {
         <p>Prijs: € 2,00</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="fanta">
+            <input type="hidden" name="price" value="2.50"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -261,29 +267,29 @@ if (!isset($_SESSION['user_id'])) {
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-$(document).ready(function() {
-    $('.buy-form').submit(function(event) {
-        event.preventDefault(); // Prevent the form from submitting normally
+$('.buy-form').submit(function(event) {
+    event.preventDefault(); // Prevent the default form submission
 
-        var form = $(this);
-        var productName = form.find('input[name="product"]').val();
-        var quantity = form.find('input[name="quantity"]').val();
+    var form = $(this);
+    var productName = form.find('input[name="product"]').val();
+    var quantity = form.find('input[name="quantity"]').val();
+    var price = form.find('input[name="price"]').val();
 
-        $.ajax({
-            url: 'cart.php', // The PHP file that handles adding to the cart
-            type: 'POST',
-            data: {
-                product: productName,
-                quantity: quantity
-            },
-            success: function(response) {
-                // Display a success message
-                alert(response); // You can customize this to show a message on the page instead
-            },
-            error: function() {
-                alert('An error occurred while adding the product to the cart.');
-            }
-        });
+    $.ajax({
+        url: 'cart.php', // The PHP file that handles adding to the cart
+        type: 'POST',
+        data: {
+            product: productName,
+            quantity: quantity,
+            price: price
+        },
+        success: function(response) {
+            var data = JSON.parse(response);
+            alert(data.message); // Show success or error message
+        },
+        error: function() {
+            alert('An error occurred while adding the product to the cart.');
+        }
     });
 });
 </script>

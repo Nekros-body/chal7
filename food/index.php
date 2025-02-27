@@ -111,5 +111,7 @@ if (!isset($_SESSION['user_id'])) {
             hamburger.classList.toggle("active");
         }
     </script>
+
+    
 </body>
 </html>
