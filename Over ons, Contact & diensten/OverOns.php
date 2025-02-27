@@ -37,7 +37,7 @@ if (!isset($_SESSION['user_id'])) {
             position: fixed;
             top: 0;
             left: -260px;
-            width: 250px;
+            width: 400px;
             height: 100vh;
             background: #333;
             color: black;
@@ -52,7 +52,7 @@ if (!isset($_SESSION['user_id'])) {
             color: black;
             text-decoration: none;
             padding: 15px;
-            font-size: 30px;
+            font-size: 18px;
         }
         .menu a:hover {
             background: grey;
