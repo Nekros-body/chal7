@@ -81,7 +81,7 @@ if (!isset($_SESSION['user_id'])) {
             <div class="bar"></div>
         </div>
         <nav class="menu" id="menu">
-            <a href="index.php">Home</a>
+            <a href="../food/index.php">Home</a>
             <a href="../Over ons, Contact & diensten/diensten.php">Diensten</a>
             <a href="../Over ons, Contact & diensten/OverOns.php">Over</a>
             <a href="../Over ons, Contact & diensten/contact.php">Contact</a>

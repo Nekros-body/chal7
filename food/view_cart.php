@@ -150,13 +150,6 @@
         }
     </script>
 
-<footer>
-<p>&copy; 2025 Mees Catering. Alle rechten voorbehouden.</p>
-</footer>
-
-
-
-
 <?php
 session_start();
 include '../login/db.php'; // Include your database connection
@@ -202,3 +195,13 @@ echo "<a href='checkout.php'>Proceed to Checkout</a>"; // Link to checkout page
 $stmt->close();
 $conn->close();
 ?>
+
+
+<footer>
+<p>&copy; 2025 Mees Catering. Alle rechten voorbehouden.</p>
+</footer>
+
+
+
+</body>
+</html>
