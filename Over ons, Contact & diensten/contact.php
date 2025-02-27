@@ -95,7 +95,7 @@ if (!isset($_SESSION['user_id'])) {
 <h1>Contact van Vista College Heerlen Catering</h1>
     
     
-    <ul> Heb je vragen, opmerkingen of speciale verzoeken? We horen graag van je! Neem contact met ons op via de onderstaande gegevens of vul het contactformulier in, en we zullen zo snel mogelijk reageren.<ul>
+    <ul> Heb je vragen, opmerkingen of speciale verzoeken? We horen graag van je! Neem contact met ons op via de onderstaande gegevens en we zullen zo snel mogelijk reageren.<ul>
     
     <h2>Contactgegevens:</h2>
     <ul>
