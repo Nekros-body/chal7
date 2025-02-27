@@ -93,24 +93,15 @@ if (!isset($_SESSION['user_id'])) {
 </header>
 <div class="inhoud">
 <h1>Over ons</h1>
-    
-    <h2>Bij Vista College Heerlen staat de student centraal. Onze cateringservice biedt een breed scala aan verse en smakelijke opties om de dagelijkse eetbehoeften van onze studenten te vervullen. Wij geloven dat goed eten bijdraagt aan een betere leerervaring en een gezonde levensstijl.
-Onze broodjes worden dagelijks bereid met de beste ingrediënten en zijn verkrijgbaar in een groot assortiment. Of je nu zin hebt in een klassiek belegde broodje, een gezond alternatief of een snel ontbijt voor onderweg, wij hebben voor ieder wat wils. We streven ernaar om onze producten regelmatig te vernieuwen en aan te passen aan de wensen van onze studenten, inclusief dieetopties zoals glutenvrij en veganistisch.
-Naast onze broodjeservice bieden we ook diverse snacks en dranken om je dag op school compleet te maken. Ons team van enthousiaste medewerkers staat altijd klaar om je te helpen en te adviseren bij je keuze.
-Bij Vista College Heerlen willen we een gezellige en gastvrije omgeving creëren waar studenten kunnen genieten van een goede maaltijd en elkaar kunnen ontmoeten. Kom gerust langs in onze kantine, bestel online of neem een kijkje op ons menu!
-</h2>
-    <ul>
-        <li><strong>Groot Assortiment:</strong> Kies uit een divers aanbod van verse broodjes, waaronder:
-            <ul>
-                <li><strong>Belegde Broodjes:</strong> Variërend van klassieke kaas en ham tot luxe beleg met vis of vegetarische opties.</li>
-                <li><strong>Zorgvuldig Geselecteerde Ingrediënten:</strong> Alle broodjes worden bereid met verse, hoogwaardige ingrediënten.</li>
-                <li><strong>Speciale Dieetopties:</strong> Inclusief glutenvrije en veganistische keuzes.</li>
-            </ul>
-        </li>
-    </ul>
-    
-    
 
+    <ul>
+    <li> Bij Vista College Heerlen staat de student centraal. Onze cateringservice biedt een breed scala aan verse en smakelijke opties om de dagelijkse eetbehoeften van onze studenten te vervullen. Wij geloven dat goed eten bijdraagt aan een betere leerervaring en een gezonde levensstijl.
+      Onze broodjes worden dagelijks bereid met de beste ingrediënten en zijn verkrijgbaar in een groot assortiment. Of je nu zin hebt in een klassiek belegde broodje, een gezond alternatief of een snel ontbijt voor onderweg, wij hebben voor ieder wat wils. We streven ernaar om onze producten regelmatig te vernieuwen en aan te passen aan de wensen van onze studenten, inclusief dieetopties zoals glutenvrij en veganistisch.
+     Naast onze broodjeservice bieden we ook diverse snacks en dranken om je dag op school compleet te maken. Ons team van enthousiaste medewerkers staat altijd klaar om je te helpen en te adviseren bij je keuze.
+     Bij Vista College Heerlen willen we een gezellige en gastvrije omgeving creëren waar studenten kunnen genieten van een goede maaltijd en elkaar kunnen ontmoeten. Kom gerust langs in onze kantine, bestel online of neem een kijkje op ons menu!
+     </li>
+     </ul>
+    
 </div>
 
 
