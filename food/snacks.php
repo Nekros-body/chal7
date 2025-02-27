@@ -155,9 +155,10 @@ if (!isset($_SESSION['user_id'])) {
         <div class="shit">
         <h2>Mexicano</h2>
         <p>Geniet van deze heerlijke Mexicano.</p>
-        <p>Prijs: € 2,00</p>
+        <p>Prijs: € 1,75</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="mexicano">
+            <input type="hidden" name="price" value="1.75"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -169,9 +170,10 @@ if (!isset($_SESSION['user_id'])) {
         <div class="shit">
         <h2>Frikandel</h2>
         <p>Geniet van deze heerlijke Frikandel.</p>
-        <p>Prijs: € 2,00</p>
+        <p>Prijs: € 1,75</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="frikandel">
+            <input type="hidden" name="price" value="1.75"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -183,9 +185,10 @@ if (!isset($_SESSION['user_id'])) {
         <div class="shit">
         <h2>Kaassoufle</h2>
         <p>Geniet van deze heerlijke Kaassoufle.</p>
-        <p>Prijs: € 2,00</p>
+        <p>Prijs: € 1,75</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="kaassoufle">
+            <input type="hidden" name="price" value="1.75"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -198,9 +201,10 @@ if (!isset($_SESSION['user_id'])) {
         <div class="shit">
         <h2>Kroket</h2>
         <p>Geniet van deze heerlijke Kroket.</p>
-        <p>Prijs: € 2,00</p>
+        <p>Prijs: € 1,75</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="kroket">
+            <input type="hidden" name="price" value="1.75"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>

@@ -158,6 +158,7 @@ if (!isset($_SESSION['user_id'])) {
         <p>Prijs: € 2,50</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="Championsoep">
+            <input type="hidden" name="price" value="2.50"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -172,6 +173,7 @@ if (!isset($_SESSION['user_id'])) {
         <p>Prijs: € 2,50</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="Tomatensoep">
+            <input type="hidden" name="price" value="2.50"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>

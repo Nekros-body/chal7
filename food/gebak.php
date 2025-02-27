@@ -155,10 +155,10 @@ if (!isset($_SESSION['user_id'])) {
         <div class="shit">
         <h2>Chocolade Muffin</h2>
         <p>Geniet van deze heerlijke Chocolade Muffin.</p>
-        <p>Prijs: € 2,75</p>
+        <p>Prijs: € 2,25</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="Chocolade Muffin">
-            <input type="hidden" name="price" value="2.50"> <!-- Include the price here -->
+            <input type="hidden" name="price" value="2.25"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -170,10 +170,10 @@ if (!isset($_SESSION['user_id'])) {
         <div class="shit">
         <h2>Suikerwafel</h2>
         <p>Geniet van deze heerlijke Suikerwafel</p>
-        <p>Prijs: € 2,15</p>
+        <p>Prijs: € 1,70</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="Suikerwafel">
-            <input type="hidden" name="price" value="2.50"> <!-- Include the price here -->
+            <input type="hidden" name="price" value="1.70"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -185,10 +185,10 @@ if (!isset($_SESSION['user_id'])) {
         <div class="shit">
         <h2>Chocolade Pudding Broodje</h2>
         <p>Geniet van deze heerlijke Chocolade Pudding Broodje</p>
-        <p>Prijs: € 1,45</p>
+        <p>Prijs: € 1,70</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="Chocolade pudding broodje">
-            <input type="hidden" name="price" value="2.50"> <!-- Include the price here -->
+            <input type="hidden" name="price" value="1.70"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>

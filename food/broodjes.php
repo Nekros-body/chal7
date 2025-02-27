@@ -155,10 +155,10 @@ if (!isset($_SESSION['user_id'])) {
         <div class="shit">
         <h2>Tosti</h2>
         <p>Geniet van deze heerlijke Tosti.</p>
-        <p>Prijs: € 4,50</p>
+        <p>Prijs: € 3,50</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="pepsi">
-            <input type="hidden" name="price" value="2.50"> <!-- Include the price here -->
+            <input type="hidden" name="price" value="3.50"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -170,10 +170,10 @@ if (!isset($_SESSION['user_id'])) {
         <div class="shit">
         <h2>Panini kip krokant</h2>
         <p>Geniet van deze heerlijke panini.</p>
-        <p>Prijs: € 4,50</p>
+        <p>Prijs: € 4,40</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="sprite">
-            <input type="hidden" name="price" value="2.50"> <!-- Include the price here -->
+            <input type="hidden" name="price" value="4.40"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
@@ -185,10 +185,10 @@ if (!isset($_SESSION['user_id'])) {
         <div class="shit">
         <h2>Broodje gezond</h2>
         <p>Geniet van dit heerlijke broodje gezond</p>
-        <p>Prijs: € 4,50</p>
+        <p>Prijs: € 3,50</p>
         <form action="cart.php" method="POST" class="buy-form">
             <input type="hidden" name="product" value="Tomatensoep">
-            <input type="hidden" name="price" value="2.50"> <!-- Include the price here -->
+            <input type="hidden" name="price" value="3.50"> <!-- Include the price here -->
             <input type="number" name="quantity" value="1" min="1">
             <button type="submit">Koop</button>
         </form>
