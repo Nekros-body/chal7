@@ -149,6 +149,8 @@ if (!isset($_SESSION['user_id'])) {
 </header>
 
     
+
+
 <div class="product-container">
     <div class="product">
         <img src= '../img/pepsi.png' alt="pepsi">
@@ -253,5 +255,34 @@ if (!isset($_SESSION['user_id'])) {
 <p>&copy; 2025 Mees Catering. Alle rechten voorbehouden.</p>
 </footer>
 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.buy-form').submit(function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        var form = $(this);
+        var productName = form.find('input[name="product"]').val();
+        var quantity = form.find('input[name="quantity"]').val();
+
+        $.ajax({
+            url: 'cart.php', // The PHP file that handles adding to the cart
+            type: 'POST',
+            data: {
+                product: productName,
+                quantity: quantity
+            },
+            success: function(response) {
+                // Display a success message
+                alert(response); // You can customize this to show a message on the page instead
+            },
+            error: function() {
+                alert('An error occurred while adding the product to the cart.');
+            }
+        });
+    });
+});
+</script>
 </body>
 </html>

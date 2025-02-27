@@ -1,60 +1,44 @@
 <?php
 session_start();
-include 'db.php';
+include '../login/db.php'; // Include your database connection
 
-// Check if user is logged in
+// Check if the user is logged in
 if (!isset($_SESSION['user_id'])) {
-    header('Location: login.php'); // Redirect to login if not logged in
+    echo "User  not logged in.";
     exit;
 }
 
-// Initialize the cart if it doesn't exist
-if (!isset($_SESSION['cart'])) {
-    $_SESSION['cart'] = [];
-}
+// Get the user ID from the session
+$userId = $_SESSION['user_id'];
 
-// Add product to the cart
+// Check if the form was submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $product_id = $_POST['product_id'];
-    $product_name = $_POST['product_name'];
-    $product_price = $_POST['product_price'];
+    // Get the product name and quantity from the POST data
+    $productName = $_POST['product'];
+    $quantity = intval($_POST['quantity']);
+    $price = 2.00; // Assuming a fixed price for all products; you can adjust this as needed
 
-    // Add product to the session cart
-    $_SESSION['cart'][] = [
-        'id' => $product_id,
-        'name' => $product_name,
-        'price' => $product_price,
-    ];
-}
+    // Check if the product is already in the cart for this user
+    $stmt = $conn->prepare("SELECT * FROM carts WHERE user_id = ? AND product_name = ?");
+    $stmt->bind_param("is", $userId, $productName);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
-// Calculate total price
-$total_price = 0;
-foreach ($_SESSION['cart'] as $item) {
-    $total_price += $item['price'];
+    if ($result->num_rows > 0) {
+        // If it exists, update the quantity
+        $stmt = $conn->prepare("UPDATE carts SET quantity = quantity + ? WHERE user_id = ? AND product_name = ?");
+        $stmt->bind_param("iis", $quantity, $userId, $productName);
+        $stmt->execute();
+        echo "Product quantity updated in cart.";
+    } else {
+        // If it doesn't exist, add it to the cart
+        $stmt = $conn->prepare("INSERT INTO carts (user_id, product_name, quantity, price) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("isid", $userId, $productName, $quantity, $price);
+        $stmt->execute();
+        echo "Product added to cart.";
+    }
+
+    $stmt->close();
+    exit;
 }
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Cart</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Your Cart</h1>
-    <ul>
-        <?php if (empty($_SESSION['cart'])): ?>
-            <li>Your cart is empty.</li>
-        <?php else: ?>
-            <?php foreach ($_SESSION['cart'] as $item): ?>
-                <li><?php echo htmlspecialchars($item['name']); ?> - $<?php echo number_format($item['price'], 2); ?></li>
-            <?php endforeach; ?>
-        <?php endif; ?>
-    </ul>
-    <p>Total: $<?php echo number_format($total_price, 2); ?></p>
-    <a href="index.php">Continue Shopping</a>
-    <a href="checkout.php">Checkout</a> <!-- Link to a checkout page if you implement one -->
-</body>
-</html>
